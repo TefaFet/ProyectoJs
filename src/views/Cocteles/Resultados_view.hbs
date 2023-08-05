@@ -1,0 +1,23 @@
+
+<section style="background-color: red;" > 
+<center><h1>Informe de resultados</h1>
+<img class="bd-placeholder-img" width="50%" height="50%" src="http://localhost:4000/img/crea.png"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></center>
+         <br>
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Correo electronico</th>
+      <th scope="col">Contraseña</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each Cocteleriadoscontroller}}
+    <tr>
+      <th scope="row">{{correo_electronico}}</th>
+      <td>{{contrasena}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</section>
